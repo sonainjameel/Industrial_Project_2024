@@ -1,0 +1,16 @@
+paths:
+  header_file: "/Users/sonainjamil/Library/CloudStorage/OneDrive-UniversityofEasternFinland/SWIR/1_Ref_0_-2.hdr"
+  dark_reference: "/Users/sonainjamil/Library/CloudStorage/OneDrive-UniversityofEasternFinland/SWIR/Dark_.hdr"
+  white_reference: "/Users/sonainjamil/Library/CloudStorage/OneDrive-UniversityofEasternFinland/SWIR/White_SWIR.hdr"
+  output_dir: "/Users/sonainjamil/Library/CloudStorage/OneDrive-UniversityofEasternFinland/Output"
+  spectral_binned_file: "/Users/sonainjamil/Library/CloudStorage/OneDrive-UniversityofEasternFinland/Output/spectral_binned_image.hdr"  # Add the path for the spectrally binned file
+parameters:
+  spatial_bin_size: 2
+  spectral_bin_size: 2
+  target_wavelengths: [1496.9, 1301.1, 1104.8]
+  reflectance_factor: "1" #"0.448 * 0.95"  # Ensure this is a string to be evaluated
+crop_params:
+  x1: 20
+  y1: 950
+  x2: 300
+  y2: 1220
