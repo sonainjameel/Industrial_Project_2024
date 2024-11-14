@@ -67,7 +67,7 @@ crop_params:
 To run the main script and execute the pipeline:
 
 ```bash
-python main.py config.yaml
+python3 main.py config.yaml
 ```
 
 This command will process the specified hyperspectral image, perform data binning, and launch an interactive visualization window.
