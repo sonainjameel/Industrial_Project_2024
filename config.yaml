@@ -8,7 +8,7 @@ parameters:
   spatial_bin_size: 2
   spectral_bin_size: 2
   target_wavelengths: [1496.9, 1301.1, 1104.8]
-  reflectance_factor: "1" #"0.448 * 0.95"  # Ensure this is a string to be evaluated
+  reflectance_factor: "1" #1 for reference image and "0.448 * 0.95"  for charred wood samples
 crop_params:
   x1: 20
   y1: 950
