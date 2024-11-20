@@ -1,5 +1,5 @@
 
-# Industrial Project Part 2: Processing and Analyzing Spectral Data
+# Industrial Project Part 1: Processing and Analyzing Spectral Data
 
 This project is designed for processing and analyzing multispectral image data. Using Python, it implements interactive visualization, data binning, preprocessing, and spectral transformations to enhance understanding of spectral properties and derivatives. 
 
