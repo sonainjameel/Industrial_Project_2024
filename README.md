@@ -75,7 +75,7 @@ This command will process the specified hyperspectral image, perform data binnin
 ## Project Structure
 
 ```
-project_root/
+Industrial_Project_2024/
 ├── config.yaml                      # Configuration file for paths and parameters
 ├── main.py                          # Main script to run the pipeline
 ├── requirements.txt                 # Required libraries
