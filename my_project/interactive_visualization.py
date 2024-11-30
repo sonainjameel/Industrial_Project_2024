@@ -79,6 +79,14 @@ def display_interactive_spectral_plot(spectral_binned_path, target_wavelengths, 
         # Update the original spectral plot
         spectral_ax.clear()
         spectral_ax.plot(binned_wavelengths, reflectance_spectrum)
+        # Add vertical lines at wavelengths 1700 and 2300
+        spectral_ax.axvline(x=1700, color='blue', linestyle='--', linewidth=1.5)#, label="1700 nm")
+        spectral_ax.axvline(x=1750, color='blue', linestyle='--', linewidth=1.5)#, label="1750 nm")
+        spectral_ax.axvline(x=2300, color='black', linestyle='--', linewidth=1.5)#, label="2300 nm")
+        spectral_ax.axvline(x=2350, color='black', linestyle='--', linewidth=1.5)#, label="2350 nm")
+        # Fill regions between 1700-1750 and 2300-2350 with light colors
+        spectral_ax.axvspan(1700, 1750, color='lightblue', alpha=0.3)#, label="1700-1750 nm Region")
+        spectral_ax.axvspan(2300, 2350, color='lightgray', alpha=0.3)#, label="2300-2350 nm Region")
         spectral_ax.set_title('Mean Spectrum')
         spectral_ax.set_xlabel('Wavelength (nm)')
         spectral_ax.set_ylabel('Reflectance')
@@ -87,6 +95,14 @@ def display_interactive_spectral_plot(spectral_binned_path, target_wavelengths, 
         # Update the normalized spectrum plot
         normalized_ax.clear()
         normalized_ax.plot(binned_wavelengths, normalized_spectrum)
+        # Add vertical lines at wavelengths 1700 and 2300
+        normalized_ax.axvline(x=1700, color='blue', linestyle='--', linewidth=1.5)#, label="1700 nm")
+        normalized_ax.axvline(x=1750, color='blue', linestyle='--', linewidth=1.5)#, label="1750 nm")
+        normalized_ax.axvline(x=2300, color='black', linestyle='--', linewidth=1.5)#, label="2300 nm")
+        normalized_ax.axvline(x=2350, color='black', linestyle='--', linewidth=1.5)#, label="2350 nm")
+        # Fill regions between 1700-1750 and 2300-2350 with light colors
+        normalized_ax.axvspan(1700, 1750, color='lightblue', alpha=0.3)#, label="1700-1750 nm Region")
+        normalized_ax.axvspan(2300, 2350, color='lightgray', alpha=0.3)#, label="2300-2350 nm Region")
         normalized_ax.set_title('Standard Normal Spectrum')
         normalized_ax.set_xlabel('Wavelength (nm)')
         normalized_ax.set_ylabel('Normalized Value')
@@ -95,6 +111,14 @@ def display_interactive_spectral_plot(spectral_binned_path, target_wavelengths, 
         # Update the first derivative plot
         first_deriv_ax.clear()
         first_deriv_ax.plot(binned_wavelengths, first_derivative)
+        # Add vertical lines at wavelengths 1700 and 2300
+        first_deriv_ax.axvline(x=1700, color='blue', linestyle='--', linewidth=1.5)#, label="1700 nm")
+        first_deriv_ax.axvline(x=1750, color='blue', linestyle='--', linewidth=1.5)#, label="1750 nm")
+        first_deriv_ax.axvline(x=2300, color='black', linestyle='--', linewidth=1.5)#, label="2300 nm")
+        first_deriv_ax.axvline(x=2350, color='black', linestyle='--', linewidth=1.5)#, label="2350 nm")
+        # Fill regions between 1700-1750 and 2300-2350 with light colors
+        first_deriv_ax.axvspan(1700, 1750, color='lightblue', alpha=0.3)#, label="1700-1750 nm Region")
+        first_deriv_ax.axvspan(2300, 2350, color='lightgray', alpha=0.3)#, label="2300-2350 nm Region")
         first_deriv_ax.set_title('First Derivative')
         first_deriv_ax.set_xlabel('Wavelength (nm)')
         first_deriv_ax.set_ylabel('Derivative Value')
@@ -103,6 +127,14 @@ def display_interactive_spectral_plot(spectral_binned_path, target_wavelengths, 
         # Update the second derivative plot
         second_deriv_ax.clear()
         second_deriv_ax.plot(binned_wavelengths, second_derivative)
+        # Add vertical lines at wavelengths 1700 and 2300
+        second_deriv_ax.axvline(x=1700, color='blue', linestyle='--', linewidth=1.5)#, label="1700 nm")
+        second_deriv_ax.axvline(x=1750, color='blue', linestyle='--', linewidth=1.5)#, label="1750 nm")
+        second_deriv_ax.axvline(x=2300, color='black', linestyle='--', linewidth=1.5)#, label="2300 nm")
+        second_deriv_ax.axvline(x=2350, color='black', linestyle='--', linewidth=1.5)#, label="2350 nm")
+        # Fill regions between 1700-1750 and 2300-2350 with light colors
+        second_deriv_ax.axvspan(1700, 1750, color='lightblue', alpha=0.3)#, label="1700-1750 nm Region")
+        second_deriv_ax.axvspan(2300, 2350, color='lightgray', alpha=0.3)#, label="2300-2350 nm Region")
         second_deriv_ax.set_title('Second Derivative')
         second_deriv_ax.set_xlabel('Wavelength (nm)')
         second_deriv_ax.set_ylabel('Second Derivative Value')
